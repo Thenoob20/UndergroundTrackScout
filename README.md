@@ -4,6 +4,23 @@ AI-assisted underground music discovery tool for DJs. Find hidden gems, track ri
 
 Underground Track Scout is a DJ-focused music discovery platform designed to uncover hidden gems before they become mainstream.
 
+# Underground Track Scout
+
+Underground Track Scout is a DJ-focused music discovery tool that helps uncover hidden gems, rising artists, underground labels, edits, remixes, and bootlegs before they become mainstream.
+
+## Current Version
+v0.8.3 Beta
+
+## Features
+
+- SoundCloud Deep Scan
+- Hidden Gem Detection
+- Rising Artist Tracking
+- Label Watch Dashboard
+- Taste Profile Learning
+- DJ-Focused Discovery Modes
+- Feedback System
+
 ## Screenshots
 
 Coming Soon
