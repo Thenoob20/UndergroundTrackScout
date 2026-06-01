@@ -57,6 +57,7 @@ Submit Feedback now opens a Google Form URL if configured in the Feedback Settin
 - Feedback
 - Personal Rising Artists
 
+## RoadMap
 v0.9
 - BPM Detection
 - Key Detection
