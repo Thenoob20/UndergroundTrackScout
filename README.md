@@ -2,6 +2,21 @@
 
 DJ-focused underground music discovery prototype.
 
+## Platform Support
+
+Current Status: Windows Beta
+
+✅ Windows 10 / 11 Supported
+
+⚠ macOS Support Coming Later
+
+⚠ Linux Support Not Tested
+
+The current beta release is focused on Windows users.
+
+Mac users may run the source code manually, but a native macOS build is not currently available.
+
+
 ## Run on Windows
 
 ```powershell
