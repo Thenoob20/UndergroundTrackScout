@@ -1,3 +1,14 @@
+## Download
+
+Latest Beta: v0.8.4
+
+Download the latest Windows beta from the Releases page:
+
+👉 Go to Releases → Download UndergroundScout_v0_8_4.zip
+
+Do not use the green “Code” button unless you want the source code.
+
+
 # Underground Track Scout v0.8
 
 DJ-focused underground music discovery prototype.
