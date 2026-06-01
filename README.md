@@ -51,3 +51,25 @@ Submit Feedback now opens a Google Form URL if configured in the Feedback Settin
 - Feedback Settings simplified to a clean Feedback tab.
 - No webhook/API fields shown to beta testers.
 - Beta Feedback button opens the linked Google Form directly.
+
+- v0.8.x
+- Stability
+- Feedback
+- Personal Rising Artists
+
+v0.9
+- BPM Detection
+- Key Detection
+- Right Click Menu
+
+v1.0
+- Serato Export
+- Rekordbox Export
+- Artist Explorer
+
+v2.0
+- User Accounts
+- Cloud Sync
+- Community Rising Artists
+- Trending Labels
+- Community Hidden Gems
