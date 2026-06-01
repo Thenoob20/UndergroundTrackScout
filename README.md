@@ -1,17 +1,25 @@
-## Download
-
-Latest Beta: v0.8.4
-
-Download the latest Windows beta from the Releases page:
-
-👉 Go to Releases → Download UndergroundScout_v0_8_4.zip
-
-Do not use the green “Code” button unless you want the source code.
-
 # Underground Track Scout
 
-Current Version: v0.8.4 Beta  
-Platform: Windows 10/11 Beta
+Current Version: v0.8.4 Beta
+
+Platform Support:
+✅ Windows 10 / 11
+
+⚠ macOS support coming in a future release
+
+## Download
+
+The latest beta version is available in the Releases section.
+
+Do NOT use the green "Code" button unless you want the source code.
+
+For most users:
+
+1. Go to Releases
+2. Download the latest version
+3. Extract the ZIP
+4. Launch Underground Track Scout
+
 
 
 # Underground Track Scout v0.8
