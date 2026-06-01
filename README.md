@@ -50,6 +50,23 @@ See `GOOGLE_SHEETS_FEEDBACK_SETUP.txt`.
 
 Spotify remains optional. SoundCloud scanning works without Spotify configured.
 
+Underground Track Scout v0.8.4 Beta
+
+New Features:
+- Right-click context menu
+- Double-click to open tracks
+- Discovery score legend
+- Grade column
+- Better empty-state messages
+- Status bar
+- Saved search settings
+
+Platform Support:
+✅ Windows 10/11
+⚠ macOS coming later
+
+Looking for DJ beta testers and feedback.
+
 
 ## v0.8.3 Feedback change
 
