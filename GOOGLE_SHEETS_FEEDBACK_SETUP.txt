@@ -1,0 +1,52 @@
+UndergroundScout v0.8 - Google Sheets Feedback Setup
+
+Use this if testers are on different computers/networks and you want all feedback in one shared Sheet.
+
+1) Create a Google Sheet.
+2) Go to Extensions > Apps Script.
+3) Paste this code:
+
+function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Feedback');
+  if (!sheet) {
+    sheet = SpreadsheetApp.getActiveSpreadsheet().insertSheet('Feedback');
+    sheet.appendRow([
+      'timestamp','tester_name','dj_type','rating','comment','artist','track','genre','track_type','platform','url','artist_url','artwork_url','score','confidence','plays','likes','reposts','hidden_gem','label','why_picked'
+    ]);
+  }
+  var data = JSON.parse(e.postData.contents);
+  sheet.appendRow([
+    data.timestamp || new Date().toISOString(),
+    data.tester_name || '',
+    data.dj_type || '',
+    data.rating || '',
+    data.comment || '',
+    data.artist || '',
+    data.track || '',
+    data.genre || '',
+    data.track_type || '',
+    data.platform || '',
+    data.url || '',
+    data.artist_url || '',
+    data.artwork_url || '',
+    data.score || '',
+    data.confidence || '',
+    data.plays || '',
+    data.likes || '',
+    data.reposts || '',
+    data.hidden_gem || '',
+    data.label || '',
+    data.why_picked || ''
+  ]);
+  return ContentService.createTextOutput(JSON.stringify({status:'ok'})).setMimeType(ContentService.MimeType.JSON);
+}
+
+4) Click Deploy > New deployment.
+5) Type: Web app.
+6) Execute as: Me.
+7) Who has access: Anyone.
+8) Copy the Web App URL.
+9) Paste it into UndergroundScout > Feedback Settings > Google Sheet Webhook URL.
+10) Turn on "Send feedback online" and save.
+
+If the URL is blank or fails, UndergroundScout still saves feedback locally inside data/underground_scout.db and can export a feedback CSV.

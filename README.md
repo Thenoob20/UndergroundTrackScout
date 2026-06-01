@@ -1,107 +1,53 @@
-# Underground Track Scout
+# Underground Track Scout v0.8
 
-Underground Track Scout is a DJ-focused music discovery tool that helps uncover hidden gems, rising artists, underground labels, edits, remixes, and bootlegs before they become mainstream.
+DJ-focused underground music discovery prototype.
 
-## Current Version
-v0.8.3 Beta
+## Run on Windows
 
-## Features
+```powershell
+run_windows.bat
+```
 
-- SoundCloud Deep Scan
-- Hidden Gem Detection
-- Rising Artist Tracking
-- Label Watch Dashboard
-- Taste Profile Learning
-- DJ-Focused Discovery Modes
-- Feedback System
+Or manually:
 
-## Screenshots
+```powershell
+py -m venv .venv
+.\.venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+```
 
-Coming Soon
+## v0.8 additions
 
-## Current Features
+- Submit Feedback popup for selected tracks
+- Local feedback database
+- Export Feedback CSV button
+- Shared feedback workflow through Google Sheets Web App webhook
+- Feedback Settings tab for tester name, DJ type, and webhook URL
+- Feedback Summary tab
+- Hover preview on result rows with track details and artwork when SoundCloud artwork is available
 
-* SoundCloud Deep Scan
-* Hidden Gem Detection
-* Rising Artist Tracking
-* Label Watch Dashboard
-* Taste Profile Learning
-* DJ-Focused Discovery Modes
-* Beta Feedback System
+## Google Sheets feedback
 
-## Status
+See `GOOGLE_SHEETS_FEEDBACK_SETUP.txt`.
 
-Current Version: v0.8.3 Beta
+## Notes
 
-Looking for DJ testers and feedback.
+Spotify remains optional. SoundCloud scanning works without Spotify configured.
 
 
-Unlike traditional recommendation engines, Underground Track Scout prioritizes:
+## v0.8.3 Feedback change
 
-* Underground and emerging artists
-* Hidden gem detection
-* Label tracking
-* Rising artist discovery
-* DJ edits, remixes, and bootlegs
-* Personalized taste learning
+Submit Feedback now opens a Google Form URL if configured in the Feedback Settings tab. If no Google Form URL is saved, it shows a Coming Soon message instead of trying to send to Google Sheets directly. Local Like/Dislike/Favorite and Export Feedback still work.
 
-## Features
 
-### Music Discovery
+## v0.8.3 Feedback Update
+- Your Google Form is preloaded: https://forms.gle/1JBeiXKLNJSWU7QN9
+- Bottom button renamed to **Beta Feedback**.
+- Feedback Settings tab has an **Open / Test Google Form** button.
 
-* SoundCloud Deep Scan
-* Multi-tag scanning
-* Deep Dig mode
-* New Upload detection
-* Hidden Gem scoring
 
-### DJ Intelligence
-
-* Rising Artist tracking
-* Label Watch dashboard
-* Taste Profile learning
-* Like / Dislike / Favorite system
-
-### Filtering
-
-* Hide DJ sets and podcasts
-* Ignore artists
-* Seen-before filtering
-* Discovery strictness modes
-
-### Analytics
-
-* Confidence scoring
-* Engagement ratio analysis
-* Repost tracking
-* Discovery explanations
-
-## Current Status
-
-Version: v0.8.3 Beta
-
-This project is actively being tested and improved with feedback from DJs and crate diggers.
-
-## Feedback
-
-If you are a DJ and would like to test the software, please submit feedback through the in-app Feedback section.
-
-## Roadmap
-
-### v0.9
-
-* BPM Detection
-* Key Detection
-* Artist Explorer
-* Improved metadata
-
-### v1.0
-
-* Serato Export
-* Rekordbox Export
-* VirtualDJ Export
-* Personalized Discovery Engine
-
-## Disclaimer
-
-This project is intended for educational and music discovery purposes.
+## v0.8.3 UX update
+- Feedback Settings simplified to a clean Feedback tab.
+- No webhook/API fields shown to beta testers.
+- Beta Feedback button opens the linked Google Form directly.
